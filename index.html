@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KJSKAI - Kiyo Japan Shotokan Karate Association India</title>
+
+<style>
+
+:root{
+--black:#0a0a0a;
+--dark:#111111;
+--red:#8b0000;
+--gold:#d4af37;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--black);
+color:white;
+line-height:1.7;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#111;
+padding:15px;
+text-align:center;
+z-index:1000;
+border-bottom:1px solid #222;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url("https://images.unsplash.com/photo-1544717684-1243da23b545");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.logo-placeholder{
+width:150px;
+height:150px;
+border:3px solid gold;
+border-radius:50%;
+margin:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#111;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:48px;
+color:gold;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:14px 25px;
+margin:10px;
+background:var(--red);
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.btn-gold{
+background:gold;
+color:black;
+}
+
+.motto{
+padding:70px 20px;
+text-align:center;
+background:#140000;
+border-top:2px solid gold;
+border-bottom:2px solid gold;
+}
+
+.motto h2{
+font-size:38px;
+color:gold;
+font-style:italic;
+}
+
+.motto p{
+margin-top:10px;
+color:#ddd;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:36px;
+color:gold;
+margin-bottom:30px;
+border-left:5px solid var(--red);
+padding-left:15px;
+}
+
+.card{
+background:#111;
+padding:25px;
+margin-bottom:20px;
+border-left:4px solid var(--red);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+background:#111;
+padding:30px;
+text-align:center;
+border:1px solid #222;
+}
+
+form input,
+form select,
+form textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+background:#0f0f0f;
+border:1px solid #333;
+color:white;
+}
+
+form button{
+padding:14px 25px;
+background:var(--red);
+border:none;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+padding:30px;
+text-align:center;
+border-top:1px solid #222;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:20px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#instructor">Instructor</a>
+
+<a href="#lineage">Lineage</a>
+
+<a href="#kobudo">Kobudo</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#join">Join</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="logo-placeholder">
+KJSKAI LOGO
+</div>
+
+<h1>
+KIYO JAPAN SHOTOKAN KARATE ASSOCIATION INDIA
+</h1>
+
+<h2>
+Traditional Shotokan Karate & Kobudo
+</h2>
+
+<p>
+
+Kyoshi Mohammad Jahangir<br>
+
+7th Dan Black Belt (Japan Diploma)<br>
+
+40+ Years Teaching Experience
+
+</p>
+
+<a href="#join" class="btn">
+Join KJSKAI
+</a>
+
+<a href="#gallery" class="btn btn-gold">
+Explore Gallery
+</a>
+
+</div>
+
+</section>
+
+<section class="motto">
+
+<h2>
+"Karate Begins and Ends with Respect"
+</h2>
+
+<p>
+— Gichin Funakoshi
+</p>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">
+About KJSKAI
+</h2>
+
+<div class="card">
+
+KJSKAI promotes authentic Japanese Shotokan Karate and traditional Kobudo training in India with emphasis on discipline, respect, character development, technical excellence and traditional dojo values.
+
+</div>
+
+</section>
+
+<section id="instructor">
+
+<h2 class="section-title">
+Chief Instructor
+</h2>
+
+<div class="card">
+
+Kyoshi Mohammad Jahangir<br><br>
+
+• 7th Dan Black Belt (Japan Diploma)<br>
+
+• 40+ Years Teaching Experience<br>
+
+• Awarded 7th Dan by Kancho Masaya Kohama (9th Dan ISSKA Japan)<br>
+
+• Technical guidance and training with Shihan Tamang Pemba (9th Dan NSKF Japan)<br>
+
+• Traditional Kobudo training under Dr. A.S. Kobudo Krishnamurti
+
+</div>
+
+</section>
+<section id="lineage">
+
+<h2 class="section-title">
+Lineage & Technical Heritage
+</h2>
+
+<div class="card">
+
+Kiyo Japan Shotokan Karate Association India (KJSKAI) is dedicated to preserving and promoting traditional Japanese Shotokan Karate and Kobudo.
+
+Under the leadership of Kyoshi Mohammad Jahangir, KJSKAI maintains authentic dojo traditions, discipline, technical excellence and character development.
+
+Kyoshi Mohammad Jahangir received his 7th Dan Black Belt from Kancho Masaya Kohama (9th Dan ISSKA Japan) and continues technical development and practice with Shihan Tamang Pemba (9th Dan NSKF Japan).
+
+Through these influences, KJSKAI strives to preserve authentic martial arts heritage while developing future generations of karate practitioners.
+
+</div>
+
+</section>
+
+<section id="kobudo">
+
+<h2 class="section-title">
+Traditional Kobudo
+</h2>
+
+<div class="card">
+
+KJSKAI also promotes traditional Kobudo training.
+
+Kobudo focuses on the study and preservation of classical Okinawan weapons and traditional martial arts methods.
+
+Kyoshi Mohammad Jahangir received Kobudo instruction under Dr. A.S. Kobudo Krishnamurti and continues to support the preservation of traditional martial arts culture.
+
+</div>
+
+</section>
+
+<section id="affiliations">
+
+<h2 class="section-title">
+Affiliations
+</h2>
+
+<div class="grid">
+
+<div class="card">
+Karate India Organisation (KIO)
+</div>
+
+<div class="card">
+NSKF Japan
+</div>
+
+</div>
+
+</section>
+
+<section id="syllabus">
+
+<h2 class="section-title">
+Belt Grading Syllabus
+</h2>
+
+<div class="card">
+White Belt (9th Kyu) – Taikyoku Shodan, Taikyoku Nidan, Taikyoku Sandan
+</div>
+
+<div class="card">
+Yellow Belt (8th Kyu) – Heian Shodan
+</div>
+
+<div class="card">
+Orange Belt (7th Kyu) – Heian Nidan
+</div>
+
+<div class="card">
+Green Belt (6th Kyu) – Heian Sandan
+</div>
+
+<div class="card">
+Blue Belt (5th Kyu) – Heian Yondan
+</div>
+
+<div class="card">
+Purple Belt (4th Kyu) – Heian Godan
+</div>
+
+<div class="card">
+Brown Belt 3 (3rd Kyu) – Tekki Shodan
+</div>
+
+<div class="card">
+Brown Belt 2 (2nd Kyu) – Tekki Nidan
+</div>
+
+<div class="card">
+Brown Belt 1 (1st Kyu) – Tekki Sandan
+</div>
+
+<div class="card">
+Black Belt Shodan – Bassai Dai
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">
+Gallery
+</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+Hombu Dojo
+</div>
+
+<div class="gallery-item">
+Shotokan Karate Training
+</div>
+
+<div class="gallery-item">
+Kobudo Training
+</div>
+
+<div class="gallery-item">
+Belt Gradings
+</div>
+
+<div class="gallery-item">
+Seminars
+</div>
+
+<div class="gallery-item">
+International Training
+</div>
+
+</div>
+
+<p style="margin-top:20px;">
+Photos will be uploaded later through the Admin Panel.
+</p>
+
+</section>
+
+<section id="join">
+
+<h2 class="section-title">
+Join KJSKAI
+</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="number" placeholder="Age">
+
+<select>
+
+<option>Gender</option>
+
+<option>Male</option>
+
+<option>Female</option>
+
+<option>Other</option>
+
+</select>
+
+<input type="tel" placeholder="Phone Number">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Previous Karate Experience">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button type="submit">
+Submit Application
+</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">
+KJSKAI Headquarters
+</h2>
+
+<div class="card">
+
+KJSKAI Hombu Dojo & Headquarters
+
+<br><br>
+
+Google Maps Location:
+
+<br><br>
+
+<a href="https://maps.app.goo.gl/8di1e5Cnt13fiGDk6?g_st=ac"
+target="_blank"
+style="color:gold;">
+
+Open Headquarters Location
+
+</a>
+
+</div>
+
+</section>
+
+<section id="downloads">
+
+<h2 class="section-title">
+Downloads
+</h2>
+
+<div class="grid">
+
+<div class="card">
+Grading Syllabus PDF
+</div>
+
+<div class="card">
+Registration Forms
+</div>
+
+<div class="card">
+Association Documents
+</div>
+
+</div>
+
+</section>
+
+<section id="social">
+
+<h2 class="section-title">
+Social Media
+</h2>
+
+<div class="grid">
+
+<div class="card">
+Facebook Link
+</div>
+
+<div class="card">
+Instagram Link
+</div>
+
+<div class="card">
+YouTube Link
+</div>
+
+<div class="card">
+WhatsApp Contact
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>
+KIYO JAPAN SHOTOKAN KARATE ASSOCIATION INDIA
+</h3>
+
+<p>
+
+Traditional Shotokan Karate & Kobudo
+
+<br><br>
+
+© 2026 KJSKAI. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+</html>
