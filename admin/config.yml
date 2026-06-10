@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "logo"
+    label: "Logo"
+    files:
+      - file: "data/logo.json"
+        label: "Site Logo"
+        fields:
+          - { label: "Logo Image", name: "image", widget: "image" }
+
+  - name: "gallery"
+    label: "Gallery Photos"
+    folder: "gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string", required: false }
